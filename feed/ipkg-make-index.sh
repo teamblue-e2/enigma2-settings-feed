@@ -3,7 +3,7 @@
 set -e
 
 D=$(pwd) &> /dev/null
-R=${D}/feed
+R=${D}
 
 touch $R/Packages
 
