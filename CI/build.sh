@@ -18,8 +18,7 @@ commit_files() {
  ./CI/hans.sh
  ./CI/oe.sh
  ./CI/matze.sh
- ./CI/mamohamed_os.sh
- ./CI/ipkg-make-index.sh
+ ./CI/mohamed_os.sh
 
  git add -u
  git add *
