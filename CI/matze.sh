@@ -2,11 +2,11 @@
 
 # Script by jbleyel for https://github.com/oe-alliance
 
-PVER="1.0"
+PVER="1.1"
 PR="r1"
 PACK="matze"
 LOCAL="local"
-GITREPRO="OpenVisionE2/Matze-settings"
+GITREPRO="oe-alliance/matze-settings"
 PACKNAME="enigma2-plugin-settings-matze"
 D=$(pwd) &> /dev/null
 PD=${D}/$LOCAL
@@ -15,7 +15,7 @@ TMP=${D}/tmp
 R=${D}/feed
 AU=${D}/matzeau
 Homepage="http://matzesetting.brinkster.net/"
-GitSource="https://github.com/OpenVisionE2/Matze-settings"
+GitSource="https://github.com/oe-alliance/matze-settings"
 
 function MakeIPK ()
 {

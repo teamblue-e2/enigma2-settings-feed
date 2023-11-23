@@ -20,8 +20,6 @@ morpheus883 -> https://github.com/morpheus883/enigma2-settings
 
 vhannibal,mr.mister,malimali ->https://github.com/oe-alliance/oe-alliance-settings
 
-gioppygio -> https://github.com/OpenVisionE2/GioppyGio-settings
-
-matze -> https://github.com/OpenVisionE2/Matze-settings
+matze -> https://github.com/oe-alliance/matze-settings
 
 mohamed-os -> https://github.com/MOHAMED19OS/settings-enigma2
