@@ -20,6 +20,9 @@ commit_files() {
  ./CI/matze.sh
  ./CI/mohamed_os.sh
 
+ rm -rf ./local
+ rm -rf ./tmp
+
  git add -u
  git add *
  git commit -m "bot update"
