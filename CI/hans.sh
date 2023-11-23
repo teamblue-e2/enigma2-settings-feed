@@ -53,11 +53,11 @@ EOF
 
 }
 GITHASH=$(git ls-remote $Homepage HEAD | sed -e 's/^\(.\{7\}\).*/\1/')
-OLDHASH=$(head -n 1 $PACK.hash 2>/dev/null)
-if [ "$OLDHASH" == "$GITHASH" ]; then
-    exit 0
-fi
-echo $GITHASH > $PACK.hash
+#OLDHASH=$(head -n 1 $PACK.hash 2>/dev/null)
+#if [ "$OLDHASH" == "$GITHASH" ]; then
+#    exit 0
+#fi
+#echo $GITHASH > $PACK.hash
 rm -rf ${PD}
 git clone ${Homepage} local
 

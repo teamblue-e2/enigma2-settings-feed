@@ -55,12 +55,12 @@ EOF
 
 GITCOMMITS=$(curl  --silent -I -k "https://api.github.com/repos/$GITREPRO/commits?per_page=1" | sed -n '/^[Ll]ink:/ s/.*"next".*page=\([0-9]*\).*"last".*/\1/p')
 GITHASH=$(git ls-remote https://github.com/$GITREPRO HEAD | sed -e 's/^\(.\{7\}\).*/\1/')
-OLDHASH=$(head -n 1 $PACK.hash 2>/dev/null)
+#OLDHASH=$(head -n 1 $PACK.hash 2>/dev/null)
 
-if [ "$OLDHASH" == "$GITHASH" ]; then
-    exit 0
-fi
-echo $GITHASH > $PACK.hash
+#if [ "$OLDHASH" == "$GITHASH" ]; then
+#    exit 0
+#fi
+#echo $GITHASH > $PACK.hash
 
 rm -rf ${PD}
 git clone --depth 1 ${Homepage} local

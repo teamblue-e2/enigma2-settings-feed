@@ -1,2 +1,5 @@
 .DS_Store
 feed/*.ipk
+build/*
+tmp/*
+local/*
