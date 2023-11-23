@@ -1,0 +1,33 @@
+name: build
+
+on:
+  schedule:
+    - cron:  '1 1 * * *'
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: 'main'
+
+      - name: Build
+        run: |
+          ./CI/build.sh
+          mkdir Rel
+          touch ./Rel/.nojekyll
+          cp ./feed/* ./Rel/
+          cd ./Rel/
+          chmod 755 ipkg-make-index.sh
+          ./ipkg-make-index.sh
+          rm ipkg-make-index.sh
+
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./Rel
+          force_orphan: true
