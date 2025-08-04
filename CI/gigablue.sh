@@ -75,6 +75,8 @@ MakeIPK gigablue_19e_13e_42e_fta ${VER}
 MakeIPK gigablue_42e_19e_13e_KD ${VER}
 MakeIPK gigablue_unity_media ${VER}
 MakeIPK gigablue_19e ${VER}
+MakeIPK gigablue_19e_fta ${VER}
 MakeIPK gigablue_19e_13e_42e_16e_23e_0w ${VER}
 MakeIPK gigablue_42e_19e_13e ${VER}
 MakeIPK gigablue_kabeldeutschland ${VER}
+MakeIPK gigablue_kd_astra_free ${VER}
